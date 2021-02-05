@@ -44,8 +44,6 @@ class CalendarsController < ApplicationController
       end
        
       wday_num = @todays_date.wday+x# wdayメソッドを用いて取得した数値
-      # wdayメソッドをwday_numに代入+xを付与することによって繰り返しに。issue6に該当
-      
       if wday_num >=7#「wday_numが7以上の場合」という条件式
         wday_num = wday_num -7
         
